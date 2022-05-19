@@ -1,11 +1,12 @@
 import React, { FC } from 'react';
 import cn from 'classnames';
+import { CheckboxProps } from 'common/components/Checkbox/Checkbox';
 
 import styles from './ControlLabel.module.css';
 
 interface ControlLabelProps {
   className: string;
-  control: any;
+  control: React.ReactElement;
   label: string;
   noIcon?: boolean;
 }

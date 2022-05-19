@@ -5,7 +5,7 @@ import { ReactComponent as IconCheckmark } from 'common/icons/checkmark.svg';
 
 import styles from './Checkbox.module.css';
 
-interface CheckboxProps {
+export interface CheckboxProps {
   className?: string;
   checked: boolean;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
