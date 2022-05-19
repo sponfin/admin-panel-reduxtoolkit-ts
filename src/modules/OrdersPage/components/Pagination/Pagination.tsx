@@ -30,6 +30,13 @@ export const Pagination: FC<PaginationProps> = ({
     if (value !== '...') dispatch(setActivePage(+value));
   };
 
+  // const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+  //   // e.currentTarget.value;
+  //   console.log(e.currentTarget);
+  //   if (e.currentTarget.value !== '...')
+  //     dispatch(setActivePage(+e.currentTarget.value));
+  // };
+
   return (
     <div className={className}>
       {pageNumbers.map((number, index) => (
@@ -37,7 +44,7 @@ export const Pagination: FC<PaginationProps> = ({
           className={styles.buttonsPage}
           theme={number === activePage ? 'main' : 'blue'}
           size="small"
-          onClick={() => handleClick}
+          onClick={handleClick}
           value={number}
           key={index}
         >
@@ -52,7 +59,7 @@ const range = (start: number, end: number) => {
   let length = end - start + 1;
   return Array.from({ length }, (_, idx) => idx + start);
 };
-const DOTS = '...';
+const DOTS: string = '...';
 
 const paginationRange = (
   currentPage: number,

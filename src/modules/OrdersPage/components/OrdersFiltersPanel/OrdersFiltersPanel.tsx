@@ -12,10 +12,10 @@ import styles from './OrdersFiltersPanel.module.css';
 interface OrdersFiltersPanelProps {
   className: string;
   children?: React.ReactNode;
-  onChange: () => void;
-  onClear: () => void;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onClear: (e: React.MouseEvent<HTMLButtonElement>) => void;
   filters: IFilters;
-  onChangeStatus: () => void;
+  onChangeStatus: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 export const OrdersFiltersPanel: FC<OrdersFiltersPanelProps> = ({

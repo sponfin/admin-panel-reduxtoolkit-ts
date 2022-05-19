@@ -66,7 +66,7 @@ export const OrdersSearchbar: FC<OrdersSearchbarProps> = ({
   const hanleClearAll = () => {
     dispatch(clearAllValueOrdersFilters());
     dispatch(setActivePage(1));
-    // onClearAllFilters();
+    if (onClearAllFilters) onClearAllFilters();
   };
 
   isVisibleFilters ? (theme = 'main') : (theme = 'blue');
@@ -77,7 +77,7 @@ export const OrdersSearchbar: FC<OrdersSearchbarProps> = ({
         className={styles.searchbarInput}
         placeholder="Номер заказа или ФИО"
         leftIcon={IconSearch}
-        onChange={() => handleChangeInputSerach}
+        onChange={handleChangeInputSerach}
         onClear={handleClear}
         name="search"
         value={search}

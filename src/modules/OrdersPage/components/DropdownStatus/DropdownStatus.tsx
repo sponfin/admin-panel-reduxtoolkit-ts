@@ -9,7 +9,7 @@ import styles from './DropdownStatus.module.css';
 interface DropdownStatusProps {
   className: string;
   valueStatus: string[];
-  onChangeStatus: () => void;
+  onChangeStatus: (e: React.ChangeEvent<HTMLInputElement>) => void;
   filters: IFilters;
   name: string;
 }
@@ -37,7 +37,6 @@ export const DropdownStatus: FC<DropdownStatusProps> = ({
         onDropClick={handleDropClick}
         isDroped={isDroped}
         placeholder="Выберите статус заказа"
-        onChange={() => {}}
       >
         {isDroped && (
           <Dropdown className={styles.dropdown}>

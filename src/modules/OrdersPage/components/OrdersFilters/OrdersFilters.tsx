@@ -49,7 +49,7 @@ export const OrdersFilters: FC<OrdersFiltersProps> = ({ className }) => {
     });
   };
 
-  const handleClear: React.ChangeEventHandler<HTMLInputElement> = ({
+  const handleClear: React.MouseEventHandler<HTMLButtonElement> = ({
     currentTarget: { name },
   }) => {
     setFilters({
@@ -70,10 +70,10 @@ export const OrdersFilters: FC<OrdersFiltersProps> = ({ className }) => {
       {isVisibleFilters && (
         <OrdersFiltersPanel
           className={styles.blockFiltersPanel}
-          onChange={() => handleChange}
-          onClear={() => handleClear}
+          onChange={handleChange}
+          onClear={handleClear}
           filters={filters}
-          onChangeStatus={() => handleChangeCheckboxStatus}
+          onChangeStatus={handleChangeCheckboxStatus}
         />
       )}
     </div>

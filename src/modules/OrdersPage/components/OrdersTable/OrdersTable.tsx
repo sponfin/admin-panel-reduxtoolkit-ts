@@ -104,7 +104,7 @@ export const OrdersTable: FC<OrdersTableProps> = ({
       <TableRow header>
         <TableCell className={styles.cellCheck}>
           <Checkbox
-            onChange={() => handleChangeCheckboxAllStatus}
+            onChange={handleChangeCheckboxAllStatus}
             value="all"
             checked={checkboxAll}
           />
@@ -165,7 +165,7 @@ export const OrdersTable: FC<OrdersTableProps> = ({
           <TableRow key={order.num}>
             <TableCell className={styles.cellCheck}>
               <Checkbox
-                onChange={() => handleChangeCheckboxStatus}
+                onChange={handleChangeCheckboxStatus}
                 value={order.num}
                 checked={checkboxStatuses.includes(`${order.num}`)}
               />

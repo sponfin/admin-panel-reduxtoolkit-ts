@@ -15,8 +15,8 @@ interface InputProps {
   value: string | string[];
   leftIcon?: any;
   className: string;
-  onChange?: () => void;
-  onClear?: () => void;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onClear?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   onDropClick?: () => void;
   name: string;
   classTitle?: string;
@@ -35,8 +35,8 @@ export const Input: FC<InputProps> = ({
 
   className,
   onChange = () => {},
-  onClear = () => {},
-  onDropClick = () => {},
+  onClear,
+  onDropClick,
   name,
   classTitle,
   children,
