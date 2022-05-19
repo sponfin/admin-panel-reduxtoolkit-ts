@@ -1,0 +1,29 @@
+._ {
+  display: flex;
+}
+.input {
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+}
+
+.customRadio {
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 16px;
+
+  background: #ffffff;
+
+  border: 1px solid #bad8f5;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+
+.input:checked ~ .customRadio {
+  border: 4px solid #459df5;
+}
+
+.input:checked ~ .label {
+  color: #459df5;
+}

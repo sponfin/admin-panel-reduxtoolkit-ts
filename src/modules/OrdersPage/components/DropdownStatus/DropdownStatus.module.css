@@ -1,0 +1,16 @@
+.input {
+  position: relative;
+}
+.dropdown {
+  /* display: none; */
+  position: absolute;
+  right: 0px;
+  left: 32px;
+  top: 38px;
+}
+.dropdownControl {
+  margin-bottom: 10px;
+}
+.dropdownControl:last-child {
+  margin-bottom: 0px;
+}

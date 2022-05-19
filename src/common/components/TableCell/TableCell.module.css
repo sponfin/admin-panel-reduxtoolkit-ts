@@ -1,0 +1,17 @@
+._ {
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  flex: 1;
+  cursor: pointer;
+}
+
+.vArrow {
+  height: 16px;
+  width: 16px;
+  fill: #ebf0f5;
+}
+
+.vArrowRotate {
+  transform: rotate(180deg);
+}

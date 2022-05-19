@@ -1,0 +1,7 @@
+._ {
+  margin-left: auto;
+
+  flex-shrink: 1;
+  display: flex;
+  align-items: center;
+}

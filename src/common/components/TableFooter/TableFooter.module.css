@@ -1,0 +1,14 @@
+._ {
+  display: flex;
+  height: 40px;
+  background-color: #ebf0f5;
+  color: #459df5;
+  padding: 8px 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  align-items: center;
+
+  flex: 0 0 auto;
+}

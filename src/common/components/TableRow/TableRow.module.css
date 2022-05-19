@@ -1,0 +1,20 @@
+._ {
+  display: flex;
+  align-items: center;
+
+  height: 40px;
+  min-width: 16px;
+
+  color: #000000;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  padding: 0px 16px 0px 16px;
+  border-bottom: 1px solid #ebf0f5;
+}
+.header {
+  background-color: #459df5;
+  color: #ebf0f5;
+  border-bottom: 0px;
+}

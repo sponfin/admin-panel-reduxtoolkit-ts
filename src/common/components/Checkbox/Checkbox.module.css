@@ -1,0 +1,44 @@
+._ {
+  display: flex;
+  position: relative;
+}
+
+.customCheckbox {
+  display: block;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  border: 1px solid #bad8f5;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.input:checked ~ .customCheckbox {
+  background: #459df5;
+  border: 0px solid #bad8f5;
+}
+
+.icon {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+
+  width: 16px;
+  height: 16px;
+  fill: #ffffff;
+}
+
+.input {
+  position: absolute;
+  z-index: 1;
+  width: 16px;
+  height: 16px;
+  top: -2px;
+
+  opacity: 0;
+}
+
+.input:checked + label {
+  color: #459df5;
+}

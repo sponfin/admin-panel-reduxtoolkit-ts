@@ -1,0 +1,42 @@
+._ {
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+  height: 100%;
+}
+
+.cellCheck {
+  flex: 0;
+  min-width: 32px;
+}
+
+.cellNum {
+  min-width: 70px;
+}
+
+.cellDate {
+  min-width: 120px;
+}
+
+.cellStatus {
+  min-width: 80px;
+}
+
+.cellPosition {
+  min-width: 75px;
+}
+
+.cellSum {
+  min-width: 70px;
+}
+
+.cellFio {
+  flex: 5;
+  min-width: 150px;
+}
+
+.pagination {
+  margin-left: auto;
+  display: flex;
+}

@@ -1,0 +1,13 @@
+._ {
+  display: flex;
+  align-items: center;
+}
+
+.searchbarInput {
+  width: 320px;
+  margin-right: 16px;
+}
+
+.searchbarButtonFilter {
+  margin-right: 16px;
+}
