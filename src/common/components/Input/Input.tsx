@@ -13,7 +13,7 @@ interface InputProps {
   placeholder: string;
   type?: string;
   value: string | string[];
-  leftIcon?: any;
+  leftIcon?: React.FC<React.SVGProps<SVGSVGElement>>;
   className: string;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   onClear?: (e: React.MouseEvent<HTMLButtonElement>) => void;

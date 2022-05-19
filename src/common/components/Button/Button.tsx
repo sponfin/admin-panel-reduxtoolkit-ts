@@ -7,7 +7,7 @@ interface ButtonProps {
   className?: string;
   theme: string;
   size: string;
-  icon?: any;
+  icon?: React.FC<React.SVGProps<SVGSVGElement>>;
   fullWidth?: boolean;
   circularRotation?: boolean;
   children?: React.ReactNode;
